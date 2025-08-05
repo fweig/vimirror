@@ -10,6 +10,9 @@ TmpDir="/tmp/vim-packages"
 rm -rf $TmpDir
 
 git clone --quiet "$Source" "$TmpDir"
+pushd "$TmpDir"
+git submodule update --init --recursive
+popd
 
 mkdir -p "$TargetDir"
 

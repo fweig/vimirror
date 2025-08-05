@@ -1,0 +1,7 @@
+YouCompleteMe is too big for this repo. To install YouCompleteMe:
+
+1. Install dependencies: sudo dnf install python3-devel clang-tools-extra
+2. Clone YCM: ./mirror.sh https://github.com/ycm-core/YouCompleteMe pack/completion/opt/ycm
+3. Compile:
+    cd pack/completion/opt/ycm
+    ./install.py --clangd-completer
